@@ -26,7 +26,7 @@ class WordClockUsermod : public Usermod
     bool nord = false;
     
     // defines for mask sizes
-    #define maskSizeLeds        114
+    #define maskSizeLeds        121
     #define maskSizeMinutes     12
     #define maskSizeMinutesMea  12
     #define maskSizeHours       6
@@ -39,7 +39,7 @@ class WordClockUsermod : public Usermod
     const int maskMinutes[14][maskSizeMinutes] = 
     {
       {107, 108, 109,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // 0 - 00
-      {  7,   8,   9,  10,  40,  41,  42,  43,  -1,  -1,  -1,  -1}, // 1 - 05 fünf nach
+      {  7,   8,   9,  10,  38,  39,  42,  43,  -1,  -1,  -1,  -1}, // 1 - 05 fünf nach
       { 11,  12,  13,  14,  40,  41,  42,  43,  -1,  -1,  -1,  -1}, // 2 - 10 zehn nach
       { 26,  27,  28,  29,  30,  31,  32,  -1,  -1,  -1,  -1,  -1}, // 3 - 15 viertel
       { 15,  16,  17,  18,  19,  20,  21,  40,  41,  42,  43,  -1}, // 4 - 20 zwanzig nach
@@ -58,18 +58,18 @@ class WordClockUsermod : public Usermod
     const int maskMinutesMea[14][maskSizeMinutesMea] = 
     {
       { 99, 100, 101,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // 0 - 00
-      {  7,   8,   9,  10,  33,  34,  35,  36,  -1,  -1,  -1,  -1}, // 1 - 05 fünf nach
-      { 18,  19,  20,  21,  33,  34,  35,  36,  -1,  -1,  -1,  -1}, // 2 - 10 zehn nach
+      {  7,   8,   9,  10,  38,  39,  40,  41,  -1,  -1,  -1,  -1}, // 1 - 05 fünf nach
+      { 18,  19,  20,  21,  38,  39,  40,  41,  -1,  -1,  -1,  -1}, // 2 - 10 zehn nach
       { 26,  27,  28,  29,  30,  31,  32,  -1,  -1,  -1,  -1,  -1}, // 3 - 15 viertel
-      { 11,  12,  13,  14,  15,  16,  17,  33,  34,  35,  36,  -1}, // 4 - 20 zwanzig nach
+      { 11,  12,  13,  14,  15,  16,  17,  38,  39,  40,  41,  -1}, // 4 - 20 zwanzig nach
       {  7,   8,   9,  10,  41,  42,  43,  44,  45,  46,  47,  -1}, // 5 - 25 fünf vor halb
       { 44,  45,  46,  47,  -1,  -1,  -1,  -1,  -1,  -1,  -1,  -1}, // 6 - 30 halb
-      {  7,   8,   9,  10,  33,  34,  35,  36,  44,  45,  46,  47}, // 7 - 35 fünf nach halb
+      {  7,   8,   9,  10,  38,  39,  40,  41,  44,  45,  46,  47}, // 7 - 35 fünf nach halb
       { 11,  12,  13,  14,  15,  16,  17,  41,  42,  43,  -1,  -1}, // 8 - 40 zwanzig vor
       { 22,  23,  24,  25,  26,  27,  28,  29,  30,  31,  32,  -1}, // 9 - 45 dreiviertel
       { 18,  19,  20,  21,  41,  42,  43,  -1,  -1,  -1,  -1,  -1}, // 10 - 50 zehn vor
       {  7,   8,   9,  10,  41,  42,  43,  -1,  -1,  -1,  -1,  -1}, // 11 - 55 fünf vor
-      { 26,  27,  28,  29,  30,  31,  32,  33,  34,  35,  36,  -1}, // 12 - 15 alternative viertel nach
+      { 26,  27,  28,  29,  30,  31,  32,  38,  39,  40,  41,  -1}, // 12 - 15 alternative viertel nach
       { 26,  27,  28,  29,  30,  31,  32,  41,  42,  43,  -1,  -1}  // 13 - 45 alternative viertel vor
     };
 
